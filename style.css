@@ -1,0 +1,85 @@
+/* Estilo geral */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* O container principal */
+.upload-container {
+    background-color: #ffffff;
+    padding: 2.5rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid #e0e0e0;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* O botão de "Escolher Arquivo" (o <label>) */
+.upload-label {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.upload-label:hover {
+    background-color: #0056b3;
+}
+
+/* O texto que mostra o nome do arquivo (UX) */
+.file-status {
+    margin-top: 1.5rem;
+    font-size: 0.9em;
+    color: #555;
+}
+
+#file-name {
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* O botão de "Fazer Upload" */
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin-top: 1rem;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
+
+/* Esconde o input de arquivo original */
+#file-input {
+    display: none;
+}
