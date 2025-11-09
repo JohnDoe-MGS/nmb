@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de Documento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="upload-container">
+        <form id="upload-form">
+            <h2>Enviar Documento</h2>
+            <p>Selecione um arquivo .docx ou .pdf para processar.</p>
+
+            <input 
+                type="file" 
+                id="file-input" 
+                name="documento"
+                accept=".docx,.pdf" 
+                hidden 
+            />
+            
+            <label for="file-input" class="upload-label">
+                Escolher Arquivo
+            </label>
+
+            <p class="file-status">
+                Arquivo: <span id="file-name">Nenhum selecionado</span>
+            </p>
+
+            <button type="submit" class="submit-btn">
+                Fazer Upload
+            </button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
